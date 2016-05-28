@@ -13,10 +13,10 @@ export function isPalindrome(word) {
   const isPalindrome = wordSimplified === wordSimplifiedReversed;
 
   if (isPalindrome) {
-    console.log(`"${wordOriginal}" is a palindome.`);
+    console.log(`"${wordOriginal}" is a palindrome.`);
   }
   else {
-    console.log(`"${wordOriginal}" is not a palindome.`);
+    console.log(`"${wordOriginal}" is not a palindrome.`);
   }
 
   return isPalindrome;
