@@ -8,7 +8,7 @@ export function isPalindrome(word) {
   const wordSimplefiedReversed = wordSimplified
     .split('')
     .reverse()
-    .join();
+    .join('');
 
   const isPalindrome = wordSimplified === wordSimplefiedReversed;
 
