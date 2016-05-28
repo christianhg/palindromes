@@ -5,12 +5,12 @@ export function isPalindrome(word) {
     .toLowerCase()
     .replace(/[\W]/g, '');
 
-  const wordSimplefiedReversed = wordSimplified
+  const wordSimplifiedReversed = wordSimplified
     .split('')
     .reverse()
     .join('');
 
-  const isPalindrome = wordSimplified === wordSimplefiedReversed;
+  const isPalindrome = wordSimplified === wordSimplifiedReversed;
 
   if (isPalindrome) {
     console.log(`"${wordOriginal}" is a palindome.`);
