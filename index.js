@@ -1,23 +1,22 @@
-export function isPalindrome(word) {
-  const wordOriginal = word;
+export function isPalindrome (word) {
+  const wordOriginal = word
 
   const wordSimplified = word
     .toLowerCase()
-    .replace(/[\W]/g, '');
+    .replace(/[\W]/g, '')
 
   const wordSimplifiedReversed = wordSimplified
     .split('')
     .reverse()
-    .join('');
+    .join('')
 
-  const isPalindrome = wordSimplified === wordSimplifiedReversed;
+  const isPalindrome = wordSimplified === wordSimplifiedReversed
 
   if (isPalindrome) {
-    console.log(`"${wordOriginal}" is a palindrome.`);
-  }
-  else {
-    console.log(`"${wordOriginal}" is not a palindrome.`);
+    console.log(`"${wordOriginal}" is a palindrome.`)
+  } else {
+    console.log(`"${wordOriginal}" is not a palindrome.`)
   }
 
-  return isPalindrome;
+  return isPalindrome
 }
